@@ -24,8 +24,8 @@ For this to work, there is not much you need to do. So, I will first walk you th
     generate access tokens) into `hidden.py`. This is the authorization step that will allow you to access web data 
     through your Twitter account.
     
-    4. Open `main.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as well
-    as the parameters (mode 1 needs params1 and mode 2 needs params2).
+    4. Open `main.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as 
+    well s the parameters (mode 1 needs params1 and mode 2 needs params2).
     
     5. Run the program and look at the pandas dataframe that is returned as the variable 'df'.
 
