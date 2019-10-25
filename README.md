@@ -10,11 +10,7 @@ Prequisites
 
 - Various libraries to import
 
-Explanation of files
---------
-For this to work, there is not much you need to do. So, I will first walk you through the necessary steps to get the program working and pulling data from Twitter, and then I will go through a little more in-depth explanations of the various modules.
-
-## To get the files running you must:
+## To get the scraper running:
 
     1. If you don't have a Twitter account, you must make one.
     
@@ -37,6 +33,12 @@ For this to work, there is not much you need to do. So, I will first walk you th
     is also included as a dictionary stored in the variable 'info'.
     
     8. Enjoy!
+    
+Explanation of files
+--------
+Getting the scraper to run is super easy, but here is a more in depth look at the different modules that makes it possible.
+
+- `hidden.py`: 
 
   
 Contributors
