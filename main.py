@@ -24,7 +24,7 @@ def run():
     #params2 = {'count' : 10}
     
     # Gets the data and retrieves a json file as an attribute of the instance
-    inst = get_data.get_data(mode, params1)
+    inst = get_data.GetData(mode, params1)
     
     info = ['text', 'retweet_count', 'created_at', 'entities', 'favorite_count']
     par  = parse.Parser(info)

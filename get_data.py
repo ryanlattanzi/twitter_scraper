@@ -17,7 +17,7 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
-class get_data:
+class GetData:
 
     #-------------------------------------------------------------------------------------
     #
@@ -120,7 +120,7 @@ class get_data:
         data       = connection.read().decode()
         
         js         = json.loads(data)
-        print(json.dumps(js, indent=2))
+        #print(json.dumps(js, indent=2))
             
         if len(js) != int(count):
             raise Exception('Only retrieved {} tweet(s), should have retrieved {} tweets.'.format(len(js), count))
