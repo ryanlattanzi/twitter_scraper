@@ -54,7 +54,7 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 I obviously need to work on mode 3, and will do so soon. Also what I would like to do is to create an option to write the data to CSV. This will be trivial given that the data is already in a pandas dataframe.
 
-Perhaps I will implement some machine learning models on this data. So, I will begin to think of some questions/problems that this data can answer/solve.
+Perhaps I will also implement some machine learning models. So, I will begin to think of some questions/problems that this data can answer/solve.
 
 Thanks for your time, I hope you enjoyed it!
 
