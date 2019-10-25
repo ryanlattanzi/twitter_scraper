@@ -26,7 +26,7 @@ Prequisites
     well as the parameters (mode 1 needs params1 and mode 2 needs params2).
     
     6. You can also configure the 'info' parameter that contains a list of the information you would like to collect.
-    You can find other information to return by looking at `json_example.txt', which is an example of the json format
+    You can find other information to return by looking at `json_format.txt', which is an example of the json format
     returned by Twitter's API.
     
     7. Run the program and look at the pandas dataframe that is returned as the variable 'df'. The same information
