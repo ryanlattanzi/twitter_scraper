@@ -14,13 +14,20 @@ Explanation of files
 --------
 For this to work, there is not much you need to do. So, I will first walk you through the necessary steps to get the program working and pulling data from Twitter, and then I will go through a little more in-depth explanations of the various modules.
 
-To get the files running you must:
+##To get the files running you must:
     
     1. Create an App on the Twitter Developer's site: https://developer.twitter.com/
-    2. Once you have this done, click on 'Details', and then 'Keys and Tokens'
+    
+    2. Once you have this done, click on 'Details', and then 'Keys and Tokens'.
+    
     3. Copy and pase the Consumer key, Consumer secret, Access Token key, Access Token secret (you may have to first 
     generate access tokens) into `hidden.py`. This is the authorization step that will allow you to access web data 
     through your Twitter account.
+    
+    4. Open `main.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as well
+    as the parameters (mode 1 needs params1 and mode 2 needs params2).
+    
+    5. Run the program and look at the pandas dataframe that is returned as the variable 'df'.
 
   
 Contributors
