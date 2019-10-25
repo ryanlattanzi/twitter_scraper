@@ -42,7 +42,9 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `oauth.py` : This is a long file that I found by taking the course 'Using Python to Access Web Data' on Coursera. It is an open source piece, and you can read the liscence at the top of the script. This piece is super complicated, and although I don't know exactly what every function or class does, I know that it takes into account the credentials in `hidden.py` and creates a url that authorizes you as the user to access your Twitter feed.
 
-- 
+- `twurl.py` : I also got this from the Coursera course mentioned above. The function 'augment' simply creates the url using the various functions in `oauth.py` and returns the final url we will access.
+
+- `get_data.py`:
 
   
 Contributors
