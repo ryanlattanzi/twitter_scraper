@@ -18,6 +18,7 @@ To get the files running you must:
     
     1. Create an App on the Twitter Developer's site: https://developer.twitter.com/
     2. Once you have this done, click on 'Details', and then 'Keys and Tokens'
+    3. Copy and pase the Consumer key, Consumer secret, Access Token key, Access Token secret (you may have to fist generate access tokens) into `hidden.py`. This is the authorization step that will allow you to access web data through your Twitter account.
 
   
 Contributors
