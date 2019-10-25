@@ -44,7 +44,9 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `twurl.py` : I also got this from the Coursera course mentioned above. The function 'augment' simply creates the url using the various functions in `oauth.py` and returns the final url we will access.
 
-- `get_data.py`:
+- `get_data.py`: The function 'pull' will actually pull the data from the url and return a JSON formatted python object (either a list or dictionary) to be parsed.
+
+- `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested.
 
   
 Contributors
