@@ -46,7 +46,9 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `get_data.py`: The function 'pull' will actually pull the data from the url and return a JSON formatted python object (either a list or dictionary) to be parsed.
 
-- `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested.
+- `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested. The function 'to_pd_df' simply converts the dictionary into a Pandas dataframe. The other functions further parse some specific pieces of the data to put them into a neater format. 'parse_created_at' and 'parse_entities' are intended for modes 1 and 2, since mode 3 has a different JSON format that will require different methods. These will be added soon.
+
+- `main.py`: Finally, this simple function is where all of the supporting functions converge to make it happen in one easy click.
 
   
 Contributors
