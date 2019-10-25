@@ -53,7 +53,6 @@ class get_data:
             print('     MODE ===> user_timeline')
             print('*********************************')
             self.user_api_url = 'https://api.twitter.com/1.1/statuses/user_timeline.json'
-            self.json_file    = self.pull12()
             
             
         elif self.mode == 2:
@@ -62,7 +61,6 @@ class get_data:
             print('     MODE ===> home_timeline')
             print('*********************************')
             self.user_api_url = 'https://api.twitter.com/1.1/statuses/home_timeline.json'
-            self.json_file    = self.pull12()
             
             
         elif self.mode == 3:
@@ -71,18 +69,19 @@ class get_data:
             print('     MODE ===> mentions_timeline')
             print('*********************************')
             self.user_api_url = 'https://api.twitter.com/1.1/statuses/mentions_timeline.json'
+            
+        self.json_file = self.pull()
         
     
     #-------------------------------------------------------------------------------------
     #
-    #                                 pull12(self, params)
+    #                                 pull(self)
     # ************************** ONLY WORKS WHEM MODE IS 1 OR 2 **************************
     #
     #    Description: This function will be called in the __init__ function to grab tweets
     #                 and other info to be extracted
     #
-    #      Arguments: params: dict: ['screen_name': str,
-    #                                'count'      : int]
+    #      Arguments: N/A
     #
     #        Outputs: js: json file: json file with tweets info, exact form can be found at url below
     #
@@ -92,7 +91,7 @@ class get_data:
     #-------------------------------------------------------------------------------------
         
         
-    def pull12(self):
+    def pull(self):
         
         #screen_name = params['screen_name']
         count       = str(self.params['count'])
@@ -121,7 +120,7 @@ class get_data:
         data       = connection.read().decode()
         
         js         = json.loads(data)
-        #print(json.dumps(js, indent=2))
+        print(json.dumps(js, indent=2))
             
         if len(js) != int(count):
             raise Exception('Only retrieved {} tweet(s), should have retrieved {} tweets.'.format(len(js), count))

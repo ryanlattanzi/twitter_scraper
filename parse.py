@@ -34,7 +34,7 @@ class Parser():
         self.params     = params
         self.tweet_info = {}
         
-        for info in params:
+        for info in self.params:
             self.tweet_info[info] = []
             
             
@@ -60,7 +60,7 @@ class Parser():
                     temp = tweet[item]
                     self.tweet_info[item].append(temp)
                 except:
-                    self.tweet_info[item].append('N/A')
+                    self.tweet_info[item].append(None)
                     
     #-------------------------------------------------------------------------------------
     #

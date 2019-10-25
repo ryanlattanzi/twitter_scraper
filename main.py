@@ -20,11 +20,11 @@ def run():
     # Set the module and necessary parameters for the mode
     mode  = 1
     params1 = {'screen_name': 'sixers',
-               'count'      : 10}
+               'count'      : 2}
     #params2 = {'count' : 10}
     
     # Gets the data and retrieves a json file as an attribute of the instance
-    inst = get_data.get_data(mode, params2)
+    inst = get_data.get_data(mode, params1)
     
     info = ['text', 'retweet_count', 'created_at', 'entities', 'favorite_count']
     par  = parse.Parser(info)
