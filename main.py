@@ -17,14 +17,14 @@ import parse
 
 def run():
     
-    # Set the module and necessary parameters for the module
-    module  = 1
+    # Set the module and necessary parameters for the mode
+    mode  = 1
     params1 = {'screen_name': 'sixers',
                'count'      : 10}
-    params2 = {'count' : 10}
+    #params2 = {'count' : 10}
     
     # Gets the data and retrieves a json file as an attribute of the instance
-    inst = get_data.get_data(module, params2)
+    inst = get_data.get_data(mode, params2)
     
     info = ['text', 'retweet_count', 'created_at', 'entities', 'favorite_count']
     par  = parse.Parser(info)
