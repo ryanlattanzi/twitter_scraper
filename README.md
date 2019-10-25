@@ -14,7 +14,7 @@ Explanation of files
 --------
 For this to work, there is not much you need to do. So, I will first walk you through the necessary steps to get the program working and pulling data from Twitter, and then I will go through a little more in-depth explanations of the various modules.
 
-##To get the files running you must:
+## To get the files running you must:
     
     1. Create an App on the Twitter Developer's site: https://developer.twitter.com/
     
