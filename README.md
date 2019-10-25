@@ -19,7 +19,7 @@ Prequisites
     3. Once you have this done, click on 'Details', and then 'Keys and Tokens'.
     
     4. Copy and pase the Consumer key, Consumer secret, Access Token key, Access Token secret (you may have to first 
-    generate access tokens) into `hidden.py`. This is the authorization step that will allow you to access web data 
+    generate access tokens) into `hidden.py`. This is the authorization info that will allow you to access web data 
     through your Twitter account.
     
     5. Open `main.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as 
@@ -38,7 +38,11 @@ Explanation of files
 --------
 Getting the scraper to run is super easy, but here is a more in depth look at the different modules that makes it possible.
 
-- `hidden.py`: 
+- `hidden.py`: As mentioned above, this file simple stores some authorization keys to be used in the next file.
+
+- `oauth.py` : This is a long file that I found by taking the course 'Using Python to Access Web Data' on Coursera. It is an open source piece, and you can read the liscence at the top of the script. This piece is super complicated, and although I don't know exactly what every function or class does, I know that it takes into account the credentials in `hidden.py` and creates a url that authorizes you as the user to access your Twitter feed.
+
+- 
 
   
 Contributors
