@@ -18,7 +18,7 @@ import parse
 def run():
     
     # Set the module and necessary parameters for the module
-    module  = 2
+    module  = 1
     params1 = {'screen_name': 'sixers',
                'count'      : 10}
     params2 = {'count' : 10}
