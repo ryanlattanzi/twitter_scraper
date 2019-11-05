@@ -22,7 +22,7 @@ Prequisites
     generate access tokens) into `hidden.py`. This is the authorization info that will allow you to access web data 
     through your Twitter account.
     
-    5. Open `main.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as 
+    5. Open `main_template.py` and configure the mode (right now only 1 and 2 work, and 1 is the most fun to play with) as 
     well as the parameters (mode 1 needs params1 and mode 2 needs params2).
     
     6. You can also configure the 'info' parameter that contains a list of the information you would like to collect.
