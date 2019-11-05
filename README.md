@@ -48,7 +48,11 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested. The function 'to_pd_df' simply converts the dictionary into a Pandas dataframe. The other functions further parse some specific pieces of the data to put them into a neater format. 'parse_created_at' and 'parse_entities' are intended for modes 1 and 2, since mode 3 has a different JSON format that will require different methods. These will be added soon.
 
-- `main_template.py`: Finally, this simple function is where all of the supporting functions converge to make it happen in one easy click.
+- `main_template.py`: This simple function is where all of the supporting functions converge to make it happen in one easy click.
+
+- `twitter_data.py`: You can consider this to be an extension of `main_template` since it grabs tweets from a list of recognizable users. It stores all tweets in a Pandas dataframe, and then writes the file to disk as a CSV for further analysis. This was done because of the limited number of calls we have to Twitter per 24 hours, so we can reuse this CSV over and over to get around calling Twitter.
+
+- `rt_count.py`: My attempt with the data gathered by `twitter_data.py` to predict the number of retweets a tweet will have. It uses NLTK for a little bit of text preprocessing and Keras functional API to work with disparate datatypes (text data and numbered data). The architecture is rather simple, using an LSTM for the text input, and a fully connected neural net for the numerical input. As of now, I have played around and gotten the MAE to reach around 4000, which is not great since this means my model predictions are off by an average of 4000 tweets.
 
 ## Future Work:
 
