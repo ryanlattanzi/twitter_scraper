@@ -48,7 +48,7 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested. The function 'to_pd_df' simply converts the dictionary into a Pandas dataframe. The other functions further parse some specific pieces of the data to put them into a neater format. 'parse_created_at' and 'parse_entities' are intended for modes 1 and 2, since mode 3 has a different JSON format that will require different methods. These will be added soon.
 
-- `main.py`: Finally, this simple function is where all of the supporting functions converge to make it happen in one easy click.
+- `main_template.py`: Finally, this simple function is where all of the supporting functions converge to make it happen in one easy click.
 
 ## Future Work:
 
