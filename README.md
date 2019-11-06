@@ -44,7 +44,7 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 - `twurl.py` : I also got this from the Coursera course mentioned above. The function 'augment' simply creates the url using the various functions in `oauth.py` and returns the final url we will access.
 
-- `get_data.py`: The function 'pull' will actually pull the data from the url and return a JSON formatted python object (either a list or dictionary) to be parsed.
+- `get_data.py`: The function 'pull' will actually pull the data from the url and return a JSON formatted python object (either a list or dictionary) to be parsed. It also has the options to save the data as a CSV or JSON. I may change the location of the saving feature to a new class of its own.
 
 - `parse.py`: Using the 'info' that is specified in `main.py`, the function 'json_parse' will go through and find these elements in the JSON file, putting them into a dictionary in which the key, value pair corresponds to the information requested. The function 'to_pd_df' simply converts the dictionary into a Pandas dataframe. The other functions further parse some specific pieces of the data to put them into a neater format. 'parse_created_at' and 'parse_entities' are intended for modes 1 and 2, since mode 3 has a different JSON format that will require different methods. These will be added soon.
 
@@ -56,7 +56,7 @@ Getting the scraper to run is super easy, but here is a more in depth look at th
 
 ## Future Work:
 
-I obviously need to work on mode 3, and will do so soon. Also what I would like to do is to create an option to write the data to CSV. This will be trivial given that the data is already in a pandas dataframe.
+I obviously need to work on mode 3, and will do so soon.
 
 Perhaps I will also implement some machine learning models. So, I will begin to think of some questions/problems that this data can answer/solve.
 
